@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
 
 class CreateSystemsModelsTable extends Migration {
 
@@ -15,7 +16,7 @@ class CreateSystemsModelsTable extends Migration {
 		Schema::create('systems_models', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->timestamp('created_at')->nullable();
 		});
 	}
 

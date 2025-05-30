@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
 
 class CreateSermonsTable extends Migration {
 
@@ -15,7 +16,7 @@ class CreateSermonsTable extends Migration {
 		Schema::create('sermons', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->timestamp('created_at')->nullable();
 		});
 	}
 
