@@ -1,0 +1,56 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Kim
+ * Date: 6/19/2015
+ * Time: 4:56 PM
+ */
+?>
+<!doctype html>
+<html lang="en">
+<head>
+<?php echo $__env->make('templates.parts.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</head>
+<body>
+<?php echo $__env->make('templates.parts.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div id="content-box">
+    <div class="page-picture" style="background-image:url('<?php echo e(URL::asset('assets/uploads/content/'.$contact_picture)); ?>');"></div>
+	<div class="container">
+        <div class="page-header">
+            <div class="page-header-title">UPCOMING</div>
+            <div class="page-header-subtitle">Events</div>
+            <div class="page-header-line-blue"></div>
+        </div>
+        <div class="page-content-description clearfix">
+            <?php foreach($events as $event): ?>
+            <div class="event">
+                <div class="event_header">
+                    <?php if($event->period_time): ?>
+                    <div class="event_date"><?php echo e($event->start_date->format('d')); ?></div>
+                    <div class="event_monthyear"><?php echo e($event->start_date->format('M').' '.$event->start_date->format('Y')); ?></div>
+                    <div class="event_date_separator">-</div>
+                    <div class="event_date"><?php echo e($event->end_date->format('d')); ?></div>
+                    <div class="event_monthyear"><?php echo e($event->end_date->format('M').' '.$event->end_date->format('Y')); ?></div>
+                    <?php else: ?>
+                    <div class="event_date"><?php echo e($event->events_date->format('d')); ?></div>
+                    <div class="event_monthyear"><?php echo e($event->events_date->format('M').' '.$event->events_date->format('Y')); ?></div>
+
+                    <?php endif; ?>
+                </div>
+                <div class="event_content">
+                    <div class="event_title"><?php echo e($event->title); ?></div>
+                    <div class="event_description">
+                    <?php echo $event->description; ?>
+
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</div>
+<?php echo $__env->make('templates.parts.newsletter', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('templates.parts.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</body>
+</html>

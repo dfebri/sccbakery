@@ -1,0 +1,14 @@
+
+@font-face {
+	font-family: 'MuseoSlab-500';
+	src: url('../../fonts/MuseoSlab-500.eot?') format('eot'),
+	     url('../../fonts/MuseoSlab-500.otf')  format('opentype'),
+	     url('../../fonts/MuseoSlab-500.woff') format('woff'),
+	     url('../../fonts/MuseoSlab-500.ttf')  format('truetype'),
+	     url('../../fonts/MuseoSlab-500.svg#MuseoSlab-500') format('svg');
+}
+
+#navigation, .newsletter-notes, #newsletter-form .form-control, .sub-footer-part h3, #copyright, .product-menu-header,
+.product-header-active, .share-box h3, .product-detail-tab-active, .page-content-header, .address-section, .map-header,
+.footer-menu > li > p,.current-category-title
+{font-family: "MuseoSlab-500";}

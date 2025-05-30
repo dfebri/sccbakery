@@ -1,0 +1,31 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Kim
+ * Date: 6/19/2015
+ * Time: 4:37 PM
+ */
+?>
+<!doctype html>
+<html lang="en">
+<head>
+<?php echo $__env->make('templates.parts.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</head>
+<body>
+<?php echo $__env->make('templates.parts.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<div class="error-content center">
+    <div class="error-header">page not found</div>
+    <div class="error-desc">
+        <p>
+            we are sorry but the page you are looking does not exist<br />
+            you may have mistyped or the page has been removed by our system.
+        </p>
+    </div>
+    <div class="error-link">
+        <a href="<?php echo e(URL::route('home')); ?>">try to go back to home</a>
+    </div>
+</div>
+<?php echo $__env->make('templates.parts.newsletter', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('templates.parts.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</body>
+</html>

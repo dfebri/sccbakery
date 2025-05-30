@@ -1,0 +1,17 @@
+<div class="row <?php echo e($group); ?>">
+	<div class="col-xs-<?php echo e($label_width); ?>">
+		<?php echo Form::label($name, $label, $label_property); ?>
+
+	</div>
+	<div class="col-xs-<?php echo e($input_width); ?>">
+		<?php echo Form::textarea($name, Input::old($name, $value), $property);; ?>
+
+
+		<?php if($suffix): ?>
+			<div class="form-suffix clearfix">
+				<?php echo $suffix; ?>
+
+			</div>
+		<?php endif; ?>
+	</div>
+</div>

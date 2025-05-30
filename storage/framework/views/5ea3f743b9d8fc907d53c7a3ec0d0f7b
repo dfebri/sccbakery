@@ -1,0 +1,34 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Kim
+ * Date: 6/19/2015
+ * Time: 3:49 PM
+ */
+?>
+<!doctype html>
+<html lang="en">
+<head>
+<?php echo $__env->make('templates.parts.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</head>
+<body>
+<?php echo $__env->make('templates.parts.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div id="content-box">
+    <div class="page-picture" style="background-image:url('<?php echo e(URL::asset('assets/uploads/content/'.$contact_picture)); ?>');"></div>
+	<div class="container">
+        <div class="page-header">
+            <div class="page-header-title">WHY</div>
+            <div class="page-header-subtitle">Choose Us</div>
+            <div class="page-header-line-blue"></div>
+        </div>
+        <div class="page-content-description clearfix">
+            <?php echo $content->description; ?>
+
+        </div>
+    </div>
+</div>
+<?php echo $__env->make('templates.parts.newsletter', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('templates.parts.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</body>
+</html>

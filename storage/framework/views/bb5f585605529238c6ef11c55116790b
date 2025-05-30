@@ -1,0 +1,82 @@
+<script>
+$(function(){
+	$('.dropdown').click(function(){
+		$('ul', $(this)).slideToggle('fast');
+		$('.menu-close', $(this)).toggle();
+		$('.menu-open', $(this)).toggle();
+	});
+});
+</script>
+	<ul class="footer-menu mobile">
+		<li class="dropdown pos-relative">
+			<p>SCC BAKERY</p>
+			<img class="menu-close" src="<?php echo e(URL::asset('resources/assets/images/footer-menu-close.png')); ?>">
+			<img class="menu-open sembunyi" src="<?php echo e(URL::asset('resources/assets/images/footer-menu-open.png')); ?>">
+			<ul>
+				<?php foreach($page_list as $list): ?>
+					<?php if($list->custom_page): ?>
+					<li><a title="<?php echo e($list->name); ?>" href="<?php echo e(URL::to($list->url)); ?>"><?php echo e($list->name); ?></a></li>
+					<?php else: ?>
+					<li><a title="<?php echo e($list->name); ?>" href="<?php echo e(URL::route('pages', $list->permalink )); ?>"><?php echo e($list->name); ?></a></li>
+					<?php endif; ?>
+				<?php endforeach; ?>
+			</ul>
+		</li>
+		<li class="dropdown pos-relative">
+			<p>PRODUCT</p>
+			<img class="menu-close" src="<?php echo e(URL::asset('resources/assets/images/footer-menu-close.png')); ?>">
+			<img class="menu-open sembunyi" src="<?php echo e(URL::asset('resources/assets/images/footer-menu-open.png')); ?>">
+			<ul>
+				<li><a title="All Products" href="<?php echo e(URL::route('category_null')); ?>">Category</a></li>
+				<li><a title="All Products" href="<?php echo e(URL::route('brand_null')); ?>">Brands</a></li>
+				<?php /*<?php foreach($category_list as $list): ?>*/ ?>
+				<?php /*<li><a title="<?php echo e($list->name); ?>" href="<?php echo e(URL::route('category', $list->permalink)); ?>"><?php echo e($list->name); ?></a></li>*/ ?>
+				<?php /*<?php endforeach; ?>*/ ?>
+			</ul>
+		</li>
+	</ul>
+<footer id="footer">
+	<div class="container">
+		<div id="sub-footer-area">
+			<div class="row">
+                <div class="sub-footer-part col-md-3 desktop">
+                    <h3>SCC BAKERY<div class="line-blue"></div></h3>
+                    <ul>
+                        <?php foreach($page_list as $list): ?>
+                            <?php if($list->custom_page): ?>
+                            <li><a title="<?php echo e($list->name); ?>" href="<?php echo e(URL::to($list->url)); ?>"><?php echo e($list->name); ?></a></li>
+                            <?php else: ?>
+                            <li><a title="<?php echo e($list->name); ?>" href="<?php echo e(URL::route('pages', $list->permalink)); ?>"><?php echo e($list->name); ?></a></li>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+				<div class="sub-footer-part col-md-3 desktop">
+					<h3>PRODUCT<div class="line-blue"></div></h3>
+					<ul>
+						<li><a title="category" href="<?php echo e(URL::route('category_null')); ?>">Categories</a></li>
+						<li><a title="brand" href="<?php echo e(URL::route('brand_null')); ?>">Brands</a></li>
+					</ul>
+				</div>
+				<div class="sub-footer-part col-md-3">
+					<h3>CONTACT US<div class="line-blue"></div></h3>
+					<div class="content"><?php echo $contact_footer; ?></div>
+<?php /*					<div class="content"><?php echo e($contact_footer); ?></div>*/ ?>
+				</div>
+				<div class="sub-footer-part col-md-3 find-us">
+					<h3>FIND US<div class="line-blue"></div></h3>
+					<?php foreach($social_link_list as $list): ?>
+					<a target="_blank" href="<?php echo e($list->link); ?>"><img title="<?php echo e($list->name); ?>" src="<?php echo e(URL::asset('resources/assets/uploads/social_link/'.$list->picture)); ?>"></a>
+					<?php endforeach; ?>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="copyright" class="center">
+        <span><?php echo e($copyright); ?></span>
+        <span>, All rights reserved.</span> 
+  
+        <!--<span>Developed by <a title="Go To Outpost Interactive Website" href="http://www.outpost-interactive.com" target="_blank">Outpost-Interactive.</a></span>-->
+    </div>
+     
+</footer>

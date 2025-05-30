@@ -1,0 +1,40 @@
+<div class="row <?php echo e($group); ?>">
+	<div class="col-xs-<?php echo e($label_width); ?>">
+		<?php echo Form::label($name, $label, $label_property); ?>
+
+	</div>
+	<div class="col-xs-<?php echo e($input_width); ?>">
+		<div class="fileinput fileinput-<?php echo e(empty($value) ? 'new' : 'exists'); ?>" data-provides="fileinput">
+		  	<div class="fileinput-new thumbnail" style="max-width: 200px; max-height: 150px;">
+		    	<img style="width: 100%;" src="<?php echo e(URL::asset('resources/assets/images/none.png')); ?>">
+		  	</div>
+		  	<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;">
+		  		<?php if($value && strstr($value, 'data:image')): ?>
+		  			<img style="width: 100%;" src="<?php echo e($value); ?>">
+		  		<?php else: ?>
+		  			<?php echo e($value); ?>
+
+		  		<?php endif; ?>
+		  	</div>
+		  	<div>
+		    	<span class="btn btn-default btn-file">
+		    		<span class="fileinput-new">Select File</span>
+		    		<span class="fileinput-exists">Change</span>
+		    		<input type="file" name="<?php echo e($name); ?>">
+		    	</span>
+		    	<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+		    	<?php if(isset($file_notes)): ?>
+		    	<p class="file-detail"><?php echo $file_notes; ?></p>
+		    	<?php endif; ?>
+		  	</div>
+		</div>
+	
+		<?php if($suffix): ?>
+			<div class="form-suffix clearfix">
+				<?php echo $suffix; ?>
+
+			</div>
+		<?php endif; ?>
+
+	</div>
+</div>

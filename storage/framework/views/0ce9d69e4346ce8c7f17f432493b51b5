@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title><?php echo e($title); ?></title>
+</head>
+<body>
+    <p>
+        There is new contact mail from your website.
+    </p>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td><?php echo e($name); ?></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><?php echo e($email); ?></td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td>:</td>
+            <td><?php echo e($subject); ?></td>
+        </tr>
+        <tr>
+            <td>Message</td>
+            <td>:</td>
+            <td><?php echo e($content); ?></td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>:</td>
+            <td><?php echo e($created_at); ?></td>
+        </tr>
+    </table>
+</body>
+</html>

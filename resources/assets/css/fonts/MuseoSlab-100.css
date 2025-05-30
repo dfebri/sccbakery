@@ -1,0 +1,15 @@
+
+@font-face {
+	font-family: 'MuseoSlab-100';
+	src: url('../../fonts/MuseoSlab-100.eot?') format('eot'),
+	     url('../../fonts/MuseoSlab-100.otf')  format('opentype'),
+	     url('../../fonts/MuseoSlab-100.woff') format('woff'),
+	     url('../../fonts/MuseoSlab-100.ttf')  format('truetype'),
+	     url('../../fonts/MuseoSlab-100.svg#MuseoSlab-100') format('svg');
+}
+
+.widget-video-description, .sub-footer-part li, .sub-footer-part .content, .product-menu-list-all:not(.product-menu-all-active),
+.product-menu-list ul li:not(.product-menu-list-active), .breadcrumb, .back-link, .product-subtitle,
+.product-description, .page-header-subtitle, #contact-form .row div:first-child, .address .content, .page-content-description,
+.error-content .error-desc,#product-menu, .footer-menu>.dropdown, .footer-menu ul li
+{font-family: MuseoSlab-100;}

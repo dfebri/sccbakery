@@ -1,0 +1,38 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Kim
+ * Date: 6/19/2015
+ * Time: 4:51 PM
+ */
+?>
+<!doctype html>
+<html lang="en">
+<head>
+<?php echo $__env->make('templates.parts.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</head>
+<body>
+<?php echo $__env->make('templates.parts.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<div id="content-box">
+    <div class="page-picture" style="background-image:url('<?php echo e(URL::asset('assets/uploads/content/'.$contact_picture)); ?>');"></div>
+	<div class="container">
+        <div class="page-header">
+            <div class="page-header-title">MEET</div>
+            <div class="page-header-subtitle">Our Suppliers</div>
+            <div class="page-header-line-blue"></div>
+        </div>
+        <div class="page-content-description clearfix">
+            <?php foreach($suppliers as $supplier): ?>
+            <div class="supplier">
+                <div class="supplier-title"><?php echo e($supplier->title); ?></div>
+                <div class="supplier-description"><?php echo $supplier->description; ?></div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</div>
+<?php echo $__env->make('templates.parts.newsletter', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('templates.parts.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+</body>
+</html>
