@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use Database\Seeds\AdministratorModelSeeder;
 use Database\Seeds\BrandModelSeed;
 use Database\Seeds\ProductModelSeed;
+use Database\Seeds\CategoryModelSeed;
 
 class DatabaseSeeder extends Seeder {
 
@@ -15,7 +16,8 @@ class DatabaseSeeder extends Seeder {
         $this->call([
             AdministratorModelSeeder::class,
             BrandModelSeed::class,
-            ProductModelSeed::class
+            ProductModelSeed::class,
+            CategoryModelSeed::class
         ]);
     }
 }

@@ -13,9 +13,9 @@ Class ProductModelSeed extends Seeder
         DB::table('product')->insert(
             [
                 [
-                    'category_id' => 18,
+                    'category_id' => 12,
                     'brand_id' => 23,
-                    'name' => 'GAS DECK OVEN GT 1002',
+                    'name' => 'EFFE UNO',
                     'subtitle' => 'DK5-1P',
                     'description' => '
                     <table>
