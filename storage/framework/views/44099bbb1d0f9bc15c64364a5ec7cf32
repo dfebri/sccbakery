@@ -58,8 +58,8 @@
             margin: 0;
             padding: 0;
             font-family: 'Lato', sans-serif;
-            background-color:rgb(32, 56, 236);
-            color:rgb(248, 249, 255);
+            background-color:rgba(208, 211, 234, 0.87);
+            color:rgb(0, 0, 0);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -89,13 +89,24 @@
             .subtitle {
                 font-size: 1rem;
             }
+            .h3 {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <div class="title">Be right back.</div>
-        <div class="subtitle">Our website is currently under maintenance. We’ll be back shortly.</div>
+        <!-- <div class="title">Be right back.</div>
+        <div class="subtitle">Our website is currently under maintenance. We’ll be back shortly.</div> -->
+        
+        <div class="error-template">
+            <h2>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:febri.murcahyo@sccbakery.com">contact us</a>, otherwise we&rsquo;ll be back online shortly!</h2>
+                <div class="text-center">
+                <h2><a class="btn btn-primary mt-1 mb-3" href="mailto:febri.murcahyo@sccbakery.com"> <i class="fa fa-long-arrow-right"></i>it@sccbakery.com</a></h2>
+                </div>
+            <h4>&mdash; SCC TEAM</h4>
+        </div>
     </div>
 </body>
 </html>

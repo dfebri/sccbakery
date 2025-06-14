@@ -1,5 +1,6 @@
-/vendor/
-/node_modules/
-/.env
-*.sql
-*.zip
+vendor/
+node_modules/
+.env
+docker-compose.yml
+Dockerfile
+storage/*.key

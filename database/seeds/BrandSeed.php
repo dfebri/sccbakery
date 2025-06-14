@@ -6,19 +6,20 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
-Class CategoryModelSeed extends Seeder {
+Class BrandSeed extends Seeder {
     
     public function run () {
-        DB::table('category')->insert(
+
+        DB::table('brand')->insert(
             [
                 // 'id' => 01,
-                'name' => 'MIXER',
-                'permalink' => 'pizza-ove',
+                'name' => 'SUNMIX',
+                'permalink' => 'sunmix',
                 'publish' => 1,
                 'order_id' => 0,
-                'meta_title' => 'PIZZA OVEN', 
-                'meta_description' => 'PIZZA OVEN, EFFE UNO',
-                'meta_keyword' => 'PIZZA OVEN, EFFE UNO, OVEN JAKARTA',
+                'meta_title' => 'SUNMIX', 
+                'meta_description' => 'SUNMIX',
+                'meta_keyword' => 'SUNMIX, MIXER, MIXER SUNMIX',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ]

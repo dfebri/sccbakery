@@ -8,6 +8,8 @@ use Database\Seeds\AdministratorModelSeeder;
 use Database\Seeds\BrandModelSeed;
 use Database\Seeds\ProductModelSeed;
 use Database\Seeds\CategoryModelSeed;
+use Database\Seeds\BrandSeed;
+
 
 class DatabaseSeeder extends Seeder {
 
@@ -17,7 +19,8 @@ class DatabaseSeeder extends Seeder {
             AdministratorModelSeeder::class,
             BrandModelSeed::class,
             ProductModelSeed::class,
-            CategoryModelSeed::class
+            CategoryModelSeed::class,
+            BrandSeed::class
         ]);
     }
 }
