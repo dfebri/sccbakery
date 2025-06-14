@@ -4,3 +4,10 @@ node_modules/
 docker-compose.yml
 Dockerfile
 storage/*.key
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+.phpunit.result.cache
+.DS_Store
+Thumbs.db
