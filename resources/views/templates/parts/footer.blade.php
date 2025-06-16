@@ -74,7 +74,7 @@ $(function(){
 	</div>
     <div id="copyright" class="center">
         <span>{{$copyright}}</span>
-        <span>, All rights reserved II.</span> 
+        <span>, All rights reserved.</span> 
   
         <!--<span>Developed by <a title="Go To Outpost Interactive Website" href="http://www.outpost-interactive.com" target="_blank">Outpost-Interactive.</a></span>-->
     </div>
