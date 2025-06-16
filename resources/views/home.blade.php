@@ -128,7 +128,7 @@
 
             <div class="widget-video-wrapper clearfix">
                 <div class="widget-video-content col-md-4 center">
-                    <a href="{{ $home_check_our_video != '' ? $home_check_our_video : '#' }}" target="_blank" class="btn widget-video-button">check our video</a>
+                    <a href="{{ $home_check_our_video != '' ? $home_check_our_video : '#' }}" target="_blank" class="btn widget-video-button">check our new video</a>
                     <div class="widget-video-title">{!! $home_video_title !!}</div>
                     <div class="widget-video-title-line"></div>
                     <div class="widget-video-description">
