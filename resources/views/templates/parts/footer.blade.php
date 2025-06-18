@@ -72,11 +72,12 @@ $(function(){
 			</div>
 		</div>
 	</div>
-    <div id="copyright" class="center">
+    <!-- <div id="copyright" class="center">
         <span>{{$copyright}}</span>
-        <span>, All rights reserved 2025.</span> 
-  
+        <span>, All rights reserved 2025.</span>  -->
         <!--<span>Developed by <a title="Go To Outpost Interactive Website" href="http://www.outpost-interactive.com" target="_blank">Outpost-Interactive.</a></span>-->
-    </div>
-     
+    <!-- </div> -->
+	<div id="copyright" class="center">
+		<span>Copyright SCCBAKERY © 2025</span>
+		<span>, All right reserved</span> 
 </footer>
