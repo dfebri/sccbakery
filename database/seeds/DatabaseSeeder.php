@@ -9,6 +9,7 @@ use Database\Seeds\BrandModelSeed;
 use Database\Seeds\ProductModelSeed;
 use Database\Seeds\CategoryModelSeed;
 use Database\Seeds\BrandSeed;
+use Database\Seeds\ProductImagesSeed;
 
 
 class DatabaseSeeder extends Seeder {
@@ -20,7 +21,8 @@ class DatabaseSeeder extends Seeder {
             BrandModelSeed::class,
             ProductModelSeed::class,
             CategoryModelSeed::class,
-            BrandSeed::class
+            BrandSeed::class,
+            ProductImagesSeed::class
         ]);
     }
 }
