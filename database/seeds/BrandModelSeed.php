@@ -14,13 +14,13 @@ class BrandModelSeed extends Seeder
         DB::table('brand')->insert(
             [ 
                 // 'id' => '',
-                'name' => 'EFFE UNO',
-                'permalink' => 'effe-uno',
+                'name' => 'BERNADI',
+                'permalink' => 'bernadi',
                 'publish' => 1,
                 'order_id' => 0,
-                'meta_title' => 'EFFE UNO',
-                'meta_description' => 'SCCBAKERY, OVEN EFFE UNO',
-                'meta_keyword' => 'SCCBAKERY, OVEN EFFE UNO, OVEN JAKARTA',
+                'meta_title' => 'BERNADI',
+                'meta_description' => 'BERNADI SPIRAL MIXER',
+                'meta_keyword' => 'SCCBAKERY, SPIRAL MIXER, MESIN BAKERY, MESIN BAKERY JAKARTA, MESIN BAKERY INTERNATIONAL',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ]  
