@@ -12,14 +12,13 @@ Class BrandSeed extends Seeder {
 
         DB::table('brand')->insert(
             [
-                // 'id' => 01,
-                'name' => 'SUNMIX',
-                'permalink' => 'sunmix',
+                'name' => 'BERNADI',
+                'permalink' => 'bernadi',
                 'publish' => 1,
                 'order_id' => 0,
-                'meta_title' => 'SUNMIX', 
-                'meta_description' => 'SUNMIX',
-                'meta_keyword' => 'SUNMIX, MIXER, MIXER SUNMIX',
+                'meta_title' => 'BERNADI',
+                'meta_description' => 'BERNADI SPIRAL MIXER',
+                'meta_keyword' => 'SCCBAKERY, SPIRAL MIXER, MESIN BAKERY, MESIN BAKERY JAKARTA, MESIN BAKERY INTERNATIONAL',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ]
