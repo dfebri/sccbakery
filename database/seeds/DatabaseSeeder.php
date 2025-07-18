@@ -3,7 +3,8 @@
 namespace Database\Seeds;
 
 use Illuminate\Database\Seeder;
-use Database\Seeds\AdministratorModelSeeder;
+use Database\Seeds\AdministratorModelSeed;
+use Database\Seeds\AdminModelSeeds;
 // use Database\Seeds\BrandModelSeed;
 use Database\Seeds\ProductModelSeed;
 use Database\Seeds\CategoryModelSeed;
@@ -16,11 +17,12 @@ class DatabaseSeeder extends Seeder {
     public function run()
     {
         $this->call([
-            AdministratorModelSeeder::class,
+            AdministratorModelSeed::class,
             ProductModelSeed::class,
             CategoryModelSeed::class,
             BrandSeed::class,
-            ProductImagesSeed::class
+            ProductImagesSeed::class,
+            AdminModelSeeds::class
         ]);
     }
 }

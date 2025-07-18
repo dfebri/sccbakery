@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
 use sccbakery\Admin\Models\AdministratorModel;
 
-class AdministratorModelSeeder extends Seeder {
+class AdministratorModelSeed extends Seeder {
 
     public function run()
     {

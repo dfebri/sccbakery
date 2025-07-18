@@ -1,24 +1,22 @@
 <?php
 
-namespace Database\Seeders;
+namespace Database\Seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
-use sccbakery\Admin\Models\AdministratorModel;
 
 class AdministratorModelSeeder extends Seeder {
 
     public function run(): void
     {
-        AdministratorModel::create([
-            'name' => 'Febri',
-            'email' => 'dwifebrimurcahyo@gmail.com',
-            'password' => Hash::make('SCCbakery123'), // Mengenkripsi password
+        AdministratorModelSeeder::create([
+            'name' => 'Cahya',
+            'email' => 'cahya@gmail.com',
+            'password' => Hash::make('cahya123'), // encrypt password
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'remember_token' => 'sccbakery',
+            'remember_token' => 'cahya',
         ]);
     }
 }

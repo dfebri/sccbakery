@@ -112,6 +112,7 @@ class Administrator extends ScaffoldController {
         ];
     }
 
+    
     function prevent_delete($data){
         if($data->id == Auth::user()->id){
             \Alert::add('Your ID cannot be deleted', 'warning');
