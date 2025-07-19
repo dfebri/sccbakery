@@ -50,10 +50,12 @@ $(function(){
 						<li><a title="brand" href="{{URL::route('brand_null')}}">Brands</a></li>
 					</ul>
 				</li>
-				<li class="{{$page=="contact"?"curr":""}}"><a href="{{URL::to('contact')}}" title="CONTACT">CONTACT<div class="line-white{{$page=="contact"?" line-white-curr":""}}"></div></a></li>
-				<li class="{{$page=="industrial-line"?"curr":""}}"><a href="{{ URL::route('single-page', 'industrial-line') }}" title="INDUSTRIAL LINE">INDUSTRIAL LINE<div class="line-white"></div></a></li>
+
+			
 				<li class="{{$page=="food-service"?"curr":""}}"><a href="{{URL::route('pages', 'food-service')}}" title="FOOD SERVICE">FOOD SERVICE<div class="line-white{{$page=="food-service"?" line-white-curr":""}}"></div></a></li>
-				<li class=""><a href="http://{{ $bakeware_link }}" title="BAKEWARE&CO.">BAKEWARE & CO.<div class="line-white"></div></a></li>
+				<li class="{{$page=="industrial-line"?"curr":""}}"><a href="{{ URL::route('single-page', 'industrial-line') }}" title="INDUSTRIAL LINE">INDUSTRIAL LINE<div class="line-white"></div></a></li>
+				<li class=""><a href="http://{{ $bakeware_link }}" title="BAKEWARE&CO.">BAKEWARE & CO<div class="line-white"></div></a></li>
+				<li class="{{$page=="contact"?"curr":""}}"><a href="{{URL::to('contact')}}" title="CONTACT">CONTACT<div class="line-white{{$page=="contact"?" line-white-curr":""}}"></div></a></li>
 			</ul>
 		</nav>
 		<div class="desktop">
