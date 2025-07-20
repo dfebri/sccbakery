@@ -9,97 +9,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-@include('templates.parts.head')
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript">
-	function initialize(longitude, latitude, selector, title) {
-		var latlng = new google.maps.LatLng(longitude,latitude);
-		var settings = {
-			zoom: 15,
-			center: latlng,
-			mapTypeControl: true,
-			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-			navigationControl: true,
-			navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-			mapTypeId: google.maps.MapTypeId.ROADMAP};
-		var map = new google.maps.Map(document.getElementById(selector), settings);
-
-		var contentString = '<div id="content">'+
-			'<div id="siteNotice">'+
-			'</div>'+
-			'<h1 id="firstHeading" class="firstHeading" style="color:#000;">'+title+'</h1>'+
-			'<div id="bodyContent"></div>'+
-			'</div>';
-		var infowindow = new google.maps.InfoWindow({
-			content: contentString
-		});
-
-		var companyImage = new google.maps.MarkerImage('resources/assets/images/logo-marker.png',
-			new google.maps.Size(77,69),
-			new google.maps.Point(0,0),
-			new google.maps.Point(50,50)
-		);
-
-		var companyPos = new google.maps.LatLng(longitude,latitude);
-
-		var companyMarker = new google.maps.Marker({
-			position: companyPos,
-			map: map,
-			icon: companyImage,
-			title:title,
-			zIndex: 3});
-
-		google.maps.event.addListener(companyMarker, 'click', function() {
-			infowindow.open(map,companyMarker);
-		});
-	}
-
-$(function () {
-    var currentMap  = 1;
-    var location    = {!! json_encode($location) !!};
-
-	$('#contact-form').submit(function(){
-        $.ajax({type: "POST",url: "{{URL::route('send_message')}}",data: $(this).serialize()
-        }).success(function(data){
-            if(data.error){
-                $('.sign_error').html(data.message);
-                $('.sign_error').show();
-                $('.sign_success').hide();
-            }else{
-                $('.sign_error').hide();
-                $('.sign_success').html(data.message);
-                $('.sign_success').show();
-                
-                $('.form-control').val('');
-            }
-        });
-        return false;
-    });
-
-    $(".map-header a").click(function(){
-        var selector    = $(this);
-        var id          = selector.attr('id').split('-')[2];
-        var parent      = selector.parent();
-        var child       = selector.children('.product-line-blue');
-
-        var prev    = $("#map-header-"+currentMap);
-        var parentPrev  = prev.parent();
-        var childPrev   = prev.children('.product-line-blue');
-        parentPrev.removeClass('map-header-active');
-        childPrev.removeClass('product-line-blue-active');
-        parent.addClass('map-header-active');
-        child.addClass('product-line-blue-active');
-
-        initialize(location[id-1].longitude, location[id-1].latitude, 'mapframe', location[id-1].name);
-
-        currentMap = id;
-		return false;
-	});
-
-	$(".map-header:first-child a").trigger('click');
-
-});
-</script>
+    @include('templates.parts.head')
+    <style>
+        #mapframe {
+            height: 500px;
+            width: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
 @include('templates.parts.header')
@@ -129,7 +46,6 @@ $(function () {
             </div>
 
             <div class="col-md-6 contact-part">
-
                 <h4 class="page-content-header">
                     send us a message
                     <div class="line-blue"></div>
@@ -175,17 +91,25 @@ $(function () {
             </div>
         </div>
 
-        <div class="maps">
+        <!-- <div class="maps">
             <div class="maps-header clearfix">
-                <?php $i = 1;?>
+                <?php $i = 1; ?>
                 @foreach($location as $address)
                     <div class="map-header col-xs-4 col-lg-3"><a id="map-header-{{ $i }}" href="#">{{ $address->name }}<div class="product-line-blue"></div></a></div>
-                <?php $i++; ?>
+                    <?php $i++; ?>
                 @endforeach
+            </div> -->
+            <div id="mapframe" class="my-5">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7196424752974!2d106.83875981070484!3d-6.168284260423302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c8470d8b95%3A0xd113cc064e33e996!2sPT.%20Sinar%20Cahaya%20Cemerlang!5e0!3m2!1sid!2sid!4v1752921405099!5m2!1sid!2sid"
+                width="100%"
+                height="450"
+                style="border:0; border-radius:16px; margin-top:20px; margin-bottom:20px; display: block;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
             </div>
-            <div id="mapframe" class="map"></div>
-        </div>
-
     </div>
 </div>
 @include('templates.parts.newsletter')

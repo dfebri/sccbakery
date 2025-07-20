@@ -14,6 +14,11 @@
 /**
  * Back
  */
+
+use Carbon\Carbon;
+// use URL;
+// use App;
+
 $router->group([
     'namespace' => 'Admin\Controllers',
     'prefix'    => '_admin'
@@ -72,6 +77,16 @@ $router->group([
 $router->group([
     'namespace' => 'Http\Controllers'
 ], function ($router) {
+    Route::get('/sitemap', function () {
+        $sitemap = App::make("sitemap");
+
+        $sitemap->add(URL::to('/'), Carbon::now());
+        $sitemap->add(URL::to('/about'), Carbon::now());
+        $sitemap->add(URL::to('/products'), Carbon::now());
+
+        return $sitemap->render('xml');
+    });
+
     Route::get('/', function () {
         return Redirect::to('home');
     });

@@ -151,6 +151,11 @@ return [
          * for Scaffolding Admin
          */
         'Folklore\Image\ImageServiceProvider',
+
+		/**
+         * for SEO
+         */
+		'Roumen\Sitemap\SitemapServiceProvider',
 	],
 
 	/*
@@ -208,6 +213,12 @@ return [
          * for Scaffold Admin
          */
         'Image'     => 'Folklore\Image\Facades\Image',
+
+		/**
+         * for SEO
+         */
+		'Sitemap' => 'Roumen\Sitemap\Facades\Sitemap',
+
 	],
 
 ];
