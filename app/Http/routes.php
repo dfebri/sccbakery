@@ -79,10 +79,14 @@ $router->group([
 ], function ($router) {
     Route::get('/sitemap', function () {
         $sitemap = App::make("sitemap");
-
         $sitemap->add(URL::to('/'), Carbon::now());
         $sitemap->add(URL::to('/about'), Carbon::now());
-        $sitemap->add(URL::to('/products'), Carbon::now());
+        $sitemap->add(URL::to('/product'), Carbon::now());
+        $sitemap->add(URL::to('/brand'), Carbon::now());
+        $sitemap->add(URL::to('/category'), Carbon::now());     
+        $sitemap->add(URL::to('/page/food-service'), Carbon::now());
+        $sitemap->add(URL::to('/industrial-line'), Carbon::now());
+        $sitemap->add(URL::to('/contact'), Carbon::now());
 
         return $sitemap->render('xml');
     });
