@@ -12,13 +12,13 @@ Class BrandSeed extends Seeder {
 
         DB::table('brand')->insert(
             [
-                'name' => 'BERNADI',
-                'permalink' => 'bernadi',
+                'name' => 'MIMAX',
+                'permalink' => 'mimax',
                 'publish' => 1,
                 'order_id' => 0,
-                'meta_title' => 'BERNADI',
-                'meta_description' => 'BERNADI SPIRAL MIXER',
-                'meta_keyword' => 'SCCBAKERY, SPIRAL MIXER, MESIN BAKERY, MESIN BAKERY JAKARTA, MESIN BAKERY INTERNATIONAL',
+                'meta_title' => 'MIMAX',
+                'meta_description' => 'Discover best performance machine for bakery at SCC for your business',
+                'meta_keyword' => 'SCCBAKERY, MIMAC, COOKIE DEPOSITOR, SUPEMA, MESIN BAKERY, MESIN BAKERY JAKARTA, MESIN BAKERY INTERNATIONAL, FOOD PROCESSING EQUIPMENT',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ]

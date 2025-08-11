@@ -132,7 +132,7 @@ $router->group([
         $sitemap->add(URL::to('/brand/merlin-perkins'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/pavoni-italia'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/yuan-jan-taiwan'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/hemao-taiwan'), Carbon::now()); 
+        // $sitemap->add(URL::to('/brand/hemao-taiwan'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/artesano-1'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/effe-uno'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/sunmix'), Carbon::now()); 
