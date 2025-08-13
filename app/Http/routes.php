@@ -130,6 +130,7 @@ $router->group([
         $sitemap->add(URL::to('/brand/jendah-taiwan'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/yang-jenq-taiwan-1'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/merlin-perkins'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/mimax'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/pavoni-italia'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/yuan-jan-taiwan'), Carbon::now()); 
         // $sitemap->add(URL::to('/brand/hemao-taiwan'), Carbon::now()); 
