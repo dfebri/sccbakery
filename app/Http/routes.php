@@ -130,7 +130,7 @@ $router->group([
         $sitemap->add(URL::to('/brand/jendah-taiwan'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/yang-jenq-taiwan-1'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/merlin-perkins'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/mimax'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/mimac'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/pavoni-italia'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/yuan-jan-taiwan'), Carbon::now()); 
         // $sitemap->add(URL::to('/brand/hemao-taiwan'), Carbon::now()); 
@@ -141,6 +141,43 @@ $router->group([
         $sitemap->add(URL::to('/page/food-service'), Carbon::now());
         $sitemap->add(URL::to('/industrial-line'), Carbon::now());
         $sitemap->add(URL::to('/contact'), Carbon::now());
+
+        //$Sitemap Product 
+        $sitemap->add(URL::to('/steam-cooking-mixer-double-jacket'), Carbon::now());
+        $sitemap->add(URL::to('/planetary-mixer-40lt-5kg'), Carbon::now());
+        $sitemap->add(URL::to('/dough-kneader-5kg'), Carbon::now());
+        $sitemap->add(URL::to('/planetary-mixer-80lt'), Carbon::now());
+        $sitemap->add(URL::to('/rectangular-cold-showcase-2'), Carbon::now());
+        $sitemap->add(URL::to('/final-prover-double-door'), Carbon::now());
+        $sitemap->add(URL::to('/gas-heated-baking-oven'), Carbon::now());
+        $sitemap->add(URL::to('/upright-chiller-4-doors'), Carbon::now());
+        $sitemap->add(URL::to('/undercounter-chiller-2-door'), Carbon::now());
+        $sitemap->add(URL::to('/dough-kneader-75kg'), Carbon::now());
+        $sitemap->add(URL::to('/retarder-proofer-double-cabinet'), Carbon::now());
+        $sitemap->add(URL::to('/dough-moulder-short'), Carbon::now());
+        $sitemap->add(URL::to('/rectangular-cold-showcase'), Carbon::now());
+        $sitemap->add(URL::to('/standing-dough-sheeter-with-foot-switch'), Carbon::now());
+        $sitemap->add(URL::to('/dough-kneader-12kg'), Carbon::now());
+        $sitemap->add(URL::to('/gas-cooking-mixer-single-jacket'), Carbon::now());
+        $sitemap->add(URL::to('/final-prover-double-door-2'), Carbon::now());
+        $sitemap->add(URL::to('/dough-moulder-long'), Carbon::now());
+        $sitemap->add(URL::to('/final-prover-single-door'), Carbon::now());
+        $sitemap->add(URL::to('/planetary-mixer-60lt'), Carbon::now());
+        $sitemap->add(URL::to('/upright-chiller-2-doors'), Carbon::now());
+        $sitemap->add(URL::to('/automatic-dough-break'), Carbon::now());
+        $sitemap->add(URL::to('/manual-divider'), Carbon::now());
+        $sitemap->add(URL::to('/semi-auto-divider-rounder'), Carbon::now());
+        $sitemap->add(URL::to('/hydraulic-divider'), Carbon::now());
+        $sitemap->add(URL::to('/portable-dough-sheeter'), Carbon::now());
+        $sitemap->add(URL::to('/portable-dough-sheeter-2'), Carbon::now());
+        $sitemap->add(URL::to('/retarder-proofer-single-cabinet'), Carbon::now());
+        $sitemap->add(URL::to('/retarder-proofer-trolley'), Carbon::now());
+        $sitemap->add(URL::to('/retarder-proofer-trolley'), Carbon::now());
+        $sitemap->add(URL::to('/electric-heatead-baking-oven'), Carbon::now());
+        $sitemap->add(URL::to('/electric-heatead-baking-oven-2'), Carbon::now());
+        $sitemap->add(URL::to('/gas-convection-oven'), Carbon::now());
+        $sitemap->add(URL::to('/electric-convection-oven'), Carbon::now());
+        // $sitemap->add(URL::to('/electric-convection-oven'), Carbon::now());
 
         return $sitemap->render('xml');
     });
