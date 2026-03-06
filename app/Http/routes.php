@@ -81,12 +81,17 @@ $router->group([
     'namespace' => 'Http\Controllers'
 ], function ($router) {
     Route::get('/sitemap', function () {
+        //Pages
         $sitemap = App::make("sitemap");
         $sitemap->add(URL::to('/'), Carbon::now());
         $sitemap->add(URL::to('/about'), Carbon::now());
-        $sitemap->add(URL::to('/product'), Carbon::now());
-        //Category
+        $sitemap->add(URL::to('/product'), Carbon::now());        
+        $sitemap->add(URL::to('/page/food-service'), Carbon::now());
+        $sitemap->add(URL::to('/industrial-line'), Carbon::now());
+        $sitemap->add(URL::to('/contact'), Carbon::now());
         $sitemap->add(URL::to('/category'), Carbon::now());
+
+        //Category Product
         $sitemap->add(URL::to('/category/blast-freezer'), Carbon::now());
         $sitemap->add(URL::to('/category/bread-line'), Carbon::now());
         $sitemap->add(URL::to('/category/chiller'), Carbon::now());
@@ -109,38 +114,34 @@ $router->group([
        
         //Brand
         $sitemap->add(URL::to('/brand'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/bresso'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/chung-hou'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/minipan-taiwan'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/vmi'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/chan-mag'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/chung-shen'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/daub'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/panem'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/pizza-master'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/eurofours'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/chih-hsing'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/rondo'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/wachtel'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/revent'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/ferneto'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/edhard-usa-2'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/belshaw-usa'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/jendah-taiwan'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/yang-jenq-taiwan-1'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/merlin-perkins'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/mimac'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/pavoni-italia'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/yuan-jan-taiwan'), Carbon::now()); 
-        // $sitemap->add(URL::to('/brand/hemao-taiwan'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/artesano'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/effe-uno'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/sunmix'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/belshaw-usa'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/bernadi'), Carbon::now());
-        $sitemap->add(URL::to('/page/food-service'), Carbon::now());
-        $sitemap->add(URL::to('/industrial-line'), Carbon::now());
-        $sitemap->add(URL::to('/contact'), Carbon::now());
-
+        $sitemap->add(URL::to('/brand/bresso'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/chan-mag'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/chih-hsing'), Carbon::now());
+        $sitemap->add(URL::to('/brand/chung-hou'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/chung-shen'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/daub'), Carbon::now());
+        $sitemap->add(URL::to('/brand/edhard-usa-2'), Carbon::now());
+        $sitemap->add(URL::to('/brand/effe-uno'), Carbon::now());
+        $sitemap->add(URL::to('/brand/eurofours'), Carbon::now());
+        $sitemap->add(URL::to('/brand/ferneto'), Carbon::now());
+        $sitemap->add(URL::to('/brand/jendah-taiwan'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/merlin-perkins'), Carbon::now());
+        $sitemap->add(URL::to('/brand/mimac'), Carbon::now());
+        $sitemap->add(URL::to('/brand/minipan-taiwan'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/panem'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/pavoni-italia'), Carbon::now());
+        $sitemap->add(URL::to('/brand/pizza-master'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/revent'), Carbon::now());
+        $sitemap->add(URL::to('/brand/rondo'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/sunmix'), Carbon::now());
+        $sitemap->add(URL::to('/brand/vmi'), Carbon::now());    
+        $sitemap->add(URL::to('/brand/wachtel'), Carbon::now());  
+        $sitemap->add(URL::to('/brand/yang-jenq-taiwan-1'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/yuan-jan-taiwan'), Carbon::now());       
+        
         //$Sitemap Product 
         // $sitemap->add(URL::to('/steam-cooking-mixer-double-jacket'), Carbon::now());
         // $sitemap->add(URL::to('/planetary-mixer-40lt-5kg'), Carbon::now());
