@@ -238,14 +238,6 @@ $router->group([
 
         //pizza-oven
         $sitemap->add(URL::to('/product/category/pizza-oven/gas-heated-baking-oven'), Carbon::now());
-
-        $sitemap->add(URL::to(), Carbon::now());
-        $sitemap->add(URL::to(), Carbon::now());
-        $sitemap->add(URL::to(), Carbon::now());
-        $sitemap->add(URL::to(), Carbon::now());
-        $sitemap->add(URL::to(), Carbon::now());
-        $sitemap->add(URL::to(), Carbon::now());
-        
         //$Sitemap Product category
         // $sitemap->add(URL::to('/steam-cooking-mixer-double-jacket'), Carbon::now());
         // $sitemap->add(URL::to('/planetary-mixer-40lt-5kg'), Carbon::now());
