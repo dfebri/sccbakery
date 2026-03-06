@@ -85,6 +85,7 @@ $router->group([
         $sitemap->add(URL::to('/'), Carbon::now());
         $sitemap->add(URL::to('/about'), Carbon::now());
         $sitemap->add(URL::to('/product'), Carbon::now());
+        //Category
         $sitemap->add(URL::to('/category'), Carbon::now());
         $sitemap->add(URL::to('/category/blast-freezer'), Carbon::now());
         $sitemap->add(URL::to('/category/bread-line'), Carbon::now());
@@ -105,13 +106,10 @@ $router->group([
         $sitemap->add(URL::to('/category/showcase'), Carbon::now());
         $sitemap->add(URL::to('/category/spiral-mixer'), Carbon::now());
         $sitemap->add(URL::to('/category/various-ovens'), Carbon::now());
-        // $sitemap->add(URL::to('category/miscellaneous'), Carbon::now())
-        // $product = ProductModel::all();    
-        // foreach ($product as $product) {
-        //     $sitemap->add(URL::to('/category/'. $product->permalink), $product->update_at);
-        // }
-        // dd($product);
+       
+        //Brand
         $sitemap->add(URL::to('/brand'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/bresso'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/chung-hou'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/minipan-taiwan'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/vmi'), Carbon::now()); 
@@ -119,6 +117,7 @@ $router->group([
         $sitemap->add(URL::to('/brand/chung-shen'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/daub'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/panem'), Carbon::now()); 
+        $sitemap->add(URL::to('/brand/pizza-master'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/eurofours'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/chih-hsing'), Carbon::now()); 
         $sitemap->add(URL::to('/brand/rondo'), Carbon::now()); 
