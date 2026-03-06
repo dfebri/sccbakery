@@ -237,7 +237,194 @@ $router->group([
         $sitemap->add(URL::to('/product/category/modular-oven/gas-heated-baking-oven'), Carbon::now());
 
         //pizza-oven
-        $sitemap->add(URL::to('/product/category/pizza-oven/gas-heated-baking-oven'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/pizza-oven/forni-p134h-509e'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/pizza-oven/heartstone-countertop-electric-ovens-pm401ed'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/pizza-oven/heartstone-countertop-electric-ovens-pm402ed'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/pizza-oven/heartstone-countertop-electric-ovens-pm722ed'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/pizza-oven/pizza-master-heartstone-countertop-electric-ovens-pm551ed'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/pizza-oven/pizza-master-heartstone-countertop-electric-ovens-pm551ed1'), Carbon::now());
+
+        //planetary-mixer
+        $sitemap->add(URL::to('/product/category/planetary-mixer/planetary-mini-mixer-8lt-1kg-3-speed'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/planetary-mixer/planetary-mixer-20lt-3kg-gear-with-timer'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/planetary-mixer/planetary-mixer-20lt-3kg-van-belt'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/planetary-mixer/planetary-mixer-40lt-5kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/planetary-mixer/planetary-mixer-50lt-8kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/planetary-mixer/planetary-mixer-60lt'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/planetary-mixer/planetary-mixer-80lt'), Carbon::now());
+
+        //retarder-proofer
+        $sitemap->add(URL::to('/product/category/retarder-proofer/retarder-proofer-double-cabinet'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/retarder-proofer/retarder-proofer-single-cabinet'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/retarder-proofer/retarder-proofer-trolley'), Carbon::now());
+
+        //showcase
+        $sitemap->add(URL::to('/product/category/showcase/rectangular-cold-showcase'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/showcase/rectangular-cold-showcase-2'), Carbon::now());
+
+        //spiral-mixer
+        $sitemap->add(URL::to('/product/category/spiral-mixer/dough-kneader-12kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/dough-kneader-50kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/dough-kneader-5kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/dough-kneader-75kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/easy-10'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/easy-15'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/easy-20'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/easy-6'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/miss-baker-pro'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/miss-baker-pro-xl'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/spiral-mixer/sun-6'), Carbon::now());
+
+        //various-ovens
+        $sitemap->add(URL::to('/product/category/various-ovens/electric-convection-oven'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/various-ovens/gas-convection-oven'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/various-ovens/gas-rotary-rack-oven-2'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/various-ovens/revent-one39'), Carbon::now());
+
+        //Product Brand
+        //artesano
+        $sitemap->add(URL::to('/product/brand/artesano/artebake-43'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/artesano/artemix-05'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/artesano/artepuff-300-black'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/artesano/artepuff-300-red'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/artesano/artepuff-300-yellow'), Carbon::now());
+
+        //belshaw-usa
+        $sitemap->add(URL::to('/product/brand/belshaw-usa/gas-automatic-donut-fryer'), Carbon::now());
+        
+        //bernardi
+        $sitemap->add(URL::to('/product/brand/bernardi/miss-baker-pro'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/bernardi/miss-baker-pro-xl'), Carbon::now());
+
+        //bresso
+        $sitemap->add(URL::to('/product/brand/bresso/automatic-electric-deck-oven-3-deck-2-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/bresso/automatic-electric-deck-oven-3-deck-3-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/bresso/automatic-electric-deck-oven-3-deck-4-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/bresso/automatic-electric-deck-oven-4-deck-4-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/bresso/automatic-gas-deck-oven-3-deck-2-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/bresso/automatic-gas-deck-oven-3-deck-3-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/bresso/automatic-gas-deck-oven-3-deck-4-tray-perdeck'), Carbon::now());
+
+        //chan-mag
+        $sitemap->add(URL::to('/product/brand/chan-mag/semi-auto-divider-rounder'), Carbon::now());
+
+        //chih-hsing
+        $sitemap->add(URL::to('/product/brand/chih-hsing/gas-heated-baking-oven'), Carbon::now());
+
+        //chung-hou
+        $sitemap->add(URL::to('/product/brand/chung-hou/dough-moulder-long'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/dough-moulder-short'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/electric-heatead-baking-oven'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/final-prover-double-door-2'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/final-prover-single-door'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/flour-shifter-regular'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/manual-divider'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/planetary-mixer-20lt-3kg-gear-with-timer'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/planetary-mixer-20lt-3kg-van-belt'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/planetary-mixer-40lt-5kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/planetary-mixer-50lt-8kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/planetary-mixer-60lt'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/planetary-mixer-80lt'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/portable-dough-sheeter'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/rectangular-cold-showcase'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/rectangular-cold-showcase-2'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/standing-dough-sheeter-with-foot-switch'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/undercounter-chiller-2-door'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/undercounter-freezer-2-doors'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/upright-chiller-2-doors'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/upright-chiller-4-doors'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/upright-freezer-2-doors'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-hou/upright-freezer-4-doors'), Carbon::now());
+
+        //chung-shen
+        $sitemap->add(URL::to('/product/brand/chung-shen/gas-cooking-mixer-single-jacket'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/chung-shen/steam-cooking-mixer-single-jacket-new'), Carbon::now());
+
+        //daub
+        $sitemap->add(URL::to('/product/brand/daub/automatic-divider-rounder'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/daub/hydraulic-divider'), Carbon::now());
+
+        //edhard-usa-2
+        $sitemap->add(URL::to('/product/brand/edhard-usa-2/filing-depositor'), Carbon::now());
+
+        //effe-uno
+        $sitemap->add(URL::to('/product/brand/effe-uno/forni-p134h-509e'), Carbon::now());
+
+        //eurofours
+        $sitemap->add(URL::to('/product/brand/eurofours/electric-convection-oven'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/eurofours/gas-convection-oven'), Carbon::now());
+
+        //ferneto
+        $sitemap->add(URL::to('/product/brand/ferneto/industrial-pie-tart-machine'), Carbon::now());
+
+        //jendah-taiwan
+        $sitemap->add(URL::to('/product/brand/jendah-taiwan/electric heated baking oven - 3 tray'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/jendah-taiwan/gas deck oven - 2 tray'), Carbon::now());
+
+        //merlin-perkins
+        $sitemap->add(URL::to('/product/brand/merlin-perkins/planetary-mini-mixer-8lt-1kg-3-speed'), Carbon::now());
+
+        //mimac
+        $sitemap->add(URL::to('/product/brand/mimac/mimac-suprema'), Carbon::now());
+
+        //minipan-taiwan
+        $sitemap->add(URL::to('/product/brand/minipan-taiwan/dough-kneader-12kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/minipan-taiwan/dough-kneader-50kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/minipan-taiwan/dough-kneader-5kg'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/minipan-taiwan/dough-kneader-75kg'), Carbon::now());
+
+        //panem
+        $sitemap->add(URL::to('/product/brand/panem/blast-freezer-16-trays'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/panem/blast-frezeer-10-tray'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/panem/final-prover-double-door'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/panem/retarder-proofer-double-cabinet'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/panem/retarder-proofer-single-cabinet'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/panem/retarder-proofer-trolley'), Carbon::now());
+
+        //pavoni-italia
+        $sitemap->add(URL::to('/product/brand/pavoni-italia/tartlet-machine'), Carbon::now());
+
+        //pizza-master
+        $sitemap->add(URL::to('/product/brand/pizza-master/heartstone-countertop-electric-ovens-pm401ed'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/pizza-master/heartstone-countertop-electric-ovens-pm402ed'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/pizza-master/heartstone-countertop-electric-ovens-pm722ed'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/pizza-master/pizza-master-heartstone-countertop-electric-ovens-pm551ed'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/pizza-master/pizza-master-heartstone-countertop-electric-ovens-pm551ed1'), Carbon::now());
+
+        //revent
+        $sitemap->add(URL::to('/product/brand/revent/gas-rotary-rack-oven-2'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/revent/revent-one39'), Carbon::now());
+
+        //rondo
+        $sitemap->add(URL::to('/product/brand/rondo/dough-sheeter'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/rondo/dough-sheeter-sso514'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/rondo/portable-dough-sheeter-2'), Carbon::now());
+
+        //sunmix
+        $sitemap->add(URL::to('/product/brand/sunmix/easy-10'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/sunmix/easy-15'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/sunmix/easy-20'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/sunmix/easy-6'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/sunmix/sun-6'), Carbon::now());
+
+        //vmi
+        $sitemap->add(URL::to('/product/brand/vmi/berto-mag-line-spiral-mixers'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/vmi/planetary-mixer-20-80lt'), Carbon::now());
+
+        //wachtel
+        $sitemap->add(URL::to('/product/brand/wachtel/electric-heatead-baking-oven-2'), Carbon::now());
+
+        //yang-jenq-taiwan-1
+        $sitemap->add(URL::to('/product/brand/yang-jenq-taiwan-1/automatic-bread-line'), Carbon::now());
+        $sitemap->add(URL::to('/product/brand/yang-jenq-taiwan-1/automatic-dough-break'), Carbon::now());
+
+        //yuan-jan-taiwan
+        $sitemap->add(URL::to('/product/brand/yuan-jan-taiwan/steamer-bakpao-KS-610(3)'), Carbon::now());
+
+        
+        
+
+
         //$Sitemap Product category
         // $sitemap->add(URL::to('/steam-cooking-mixer-double-jacket'), Carbon::now());
         // $sitemap->add(URL::to('/planetary-mixer-40lt-5kg'), Carbon::now());
