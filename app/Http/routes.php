@@ -18,6 +18,7 @@
 use Carbon\Carbon;
 use App\CategoryModel;
 use App\ProductModel;
+use Illuminate\Support\Facades\URL;
 
 // use URL;
 // use App;
@@ -91,7 +92,7 @@ $router->group([
         $sitemap->add(URL::to('/contact'), Carbon::now());
         $sitemap->add(URL::to('/category'), Carbon::now());
 
-        //Category Product
+        //Category 
         $sitemap->add(URL::to('/category/blast-freezer'), Carbon::now());
         $sitemap->add(URL::to('/category/bread-line'), Carbon::now());
         $sitemap->add(URL::to('/category/chiller'), Carbon::now());
@@ -140,9 +141,112 @@ $router->group([
         $sitemap->add(URL::to('/brand/vmi'), Carbon::now());    
         $sitemap->add(URL::to('/brand/wachtel'), Carbon::now());  
         $sitemap->add(URL::to('/brand/yang-jenq-taiwan-1'), Carbon::now()); 
-        $sitemap->add(URL::to('/brand/yuan-jan-taiwan'), Carbon::now());       
+        $sitemap->add(URL::to('/brand/yuan-jan-taiwan'), Carbon::now());  
         
-        //$Sitemap Product 
+        //Product category
+        //blast-freezer
+        $sitemap->add(URL::to('/product/category/blast-freezer/blast-freezer-16-trays'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/blast-freezer/blast-frezeer-10-tray'), Carbon::now());
+       
+        //breadline
+        $sitemap->add(URL::to('/product/category/bread-line/automatic-bread-line'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/bread-line/filling-depositor'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/bread-line/moon-cake-machine'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/bread-line/twist-dividing-machine'), Carbon::now());
+      
+        //Chiller
+        $sitemap->add(URL::to('/product/category/chiller/undercounter-chiller-2-door'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/chiller/upright-chiller-2-doors'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/chiller/upright-chiller-4-doors'), Carbon::now());
+       
+        //Cooking Mixer
+        $sitemap->add(URL::to('/product/category/cooking-mixer/gas-cooking-mixer-double-jacket'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/cooking-mixer/gas-cooking-mixer-single-jacket'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/cooking-mixer/steam-cooking-mixer-double-jacket'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/cooking-mixer/steam-cooking-mixer-single-jacket-new'), Carbon::now());
+       
+        //divider rounder
+        $sitemap->add(URL::to('/product/category/divider-rounder/automatic-divider-rounder'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/divider-rounder/hydraulic-divider'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/divider-rounder/manual-divider'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/divider-rounder/semi-auto-divider-rounder'), Carbon::now());
+       
+        //dough-moulder
+        $sitemap->add(URL::to('/product/category/dough-moulder/automatic-dough-break'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/dough-moulder/dough-moulder-long'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/dough-moulder/dough-moulder-short'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/dough-moulder/dough-rolling-machine'), Carbon::now());
+        
+        //dough-sheeter
+        $sitemap->add(URL::to('/product/category/dough-sheeter/dough-sheeter'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/dough-sheeter/dough-sheeter-sso514'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/dough-sheeter/portable-dough-sheeter'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/dough-sheeter/portable-dough-sheeter-2'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/dough-sheeter/standing-dough-sheeter'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/dough-sheeter/standing-dough-sheeter-with-foot-switch'), Carbon::now());
+
+        //filling-and-dosing
+        $sitemap->add(URL::to('/product/category/filling-and-dosing/filing-depositor'), Carbon::now());
+
+        //final-proofer
+        $sitemap->add(URL::to('/product/category/final-proofer/final-prover-2-door'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/final-proofer/final-prover-double-door'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/final-proofer/final-prover-double-door-2'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/final-proofer/final-prover-single-door'), Carbon::now());
+
+        //freezer
+        $sitemap->add(URL::to('/product/category/freezer/undercounter-freezer-2-doors'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/freezer/upright-freezer-2-doors'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/freezer/upright-freezer-4-doors'), Carbon::now());
+
+        //fryer
+        $sitemap->add(URL::to('/product/category/fryer/gas-automatic-donut-fryer'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/fryer/gas-fryer-large'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/fryer/gas-fryer-regular'), Carbon::now());
+
+        //miscellaneous
+        $sitemap->add(URL::to('/product/category/miscellaneous/artebake-43'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/artemix-05'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/artepuff-300-black'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/artepuff-300-red'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/artepuff-300-yellow'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/berto-mag-line-spiral-mixers'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/cake-depositor'), Carbon::now());
+        //$sitemap->add(URL::to('/product/category/miscellaneous/chocolate-warmer-2-bowls'), Carbon::now());
+        //$sitemap->add(URL::to('/product/category/miscellaneous/chocolate-warmer-6-bowls'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/electric heated baking oven - 3 tray'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/flour-shifter-regular'), Carbon::now());
+        //$sitemap->add(URL::to('/product/category/miscellaneous/flour-sifter'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/gas deck oven - 2 tray'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/industrial-pie-tart-machine'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/mimac-suprema'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/planetary-mixer-20-80lt'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/steamer-bakpao-KS-610(3)'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/miscellaneous/tartlet-machine'), Carbon::now());
+
+        //modular-oven
+        $sitemap->add(URL::to('/product/category/modular-oven/automatic-electric-deck-oven-3-deck-2-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/automatic-electric-deck-oven-3-deck-3-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/automatic-electric-deck-oven-3-deck-4-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/automatic-electric-deck-oven-4-deck-4-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/automatic-gas-deck-oven-3-deck-2-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/automatic-gas-deck-oven-3-deck-3-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/automatic-gas-deck-oven-3-deck-4-tray-perdeck'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/electric-heatead-baking-oven'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/electric-heatead-baking-oven-2'), Carbon::now());
+        $sitemap->add(URL::to('/product/category/modular-oven/gas-heated-baking-oven'), Carbon::now());
+
+        //pizza-oven
+        $sitemap->add(URL::to('/product/category/pizza-oven/gas-heated-baking-oven'), Carbon::now());
+
+        $sitemap->add(URL::to(), Carbon::now());
+        $sitemap->add(URL::to(), Carbon::now());
+        $sitemap->add(URL::to(), Carbon::now());
+        $sitemap->add(URL::to(), Carbon::now());
+        $sitemap->add(URL::to(), Carbon::now());
+        $sitemap->add(URL::to(), Carbon::now());
+        
+        //$Sitemap Product category
         // $sitemap->add(URL::to('/steam-cooking-mixer-double-jacket'), Carbon::now());
         // $sitemap->add(URL::to('/planetary-mixer-40lt-5kg'), Carbon::now());
         // $sitemap->add(URL::to('/dough-kneader-5kg'), Carbon::now());
