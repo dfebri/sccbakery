@@ -727,7 +727,201 @@ header{
     font-family:'Gotham-Book','Arial'; color:#363636;
 }
 
+/* business card section */
+.business-cards {
+    max-width: 1200px;
+    margin: 45px auto 60px;
+    padding: 0 20px;
+}
 
+.business-card {
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+}
+
+/* image */
+.business-image-link {
+    display: block;
+    text-decoration: none;
+    border: none;
+}
+
+.business-image {
+    width: 100%;
+    height: 280px;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.business-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Image hover */
+.business-card:hover .business-image img {
+    transform: scale(1.03);
+}
+
+.business-card-content {
+    padding: 22px 24px 24px;
+    background: #ffffff;
+}
+
+/* category */
+.business-category {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #1e5aa8;
+    margin-bottom: 8px;
+}
+
+/* title */
+.business-card-content h3 {
+    margin: 0 0 8px;
+    font-size: 23px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #222;
+}
+
+/* description */
+.business-card-content p {
+    margin: 0 0 16px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #777;
+    /* min-height: 44px; */
+}
+
+.business-button {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid #1e5aa8;
+    border-radius: 4px;
+    color: #1e5aa8;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.business-button:hover {
+    background: #1e5aa8;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.business-button span {
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+.business-heading:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2.7px;
+    background: #1e5aa8;
+    margin: 18px auto 0;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+    .business-cards {
+        padding: 0 15px;
+    }
+    .business-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .business-cards {
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+
+    .business-image {
+        height: 220px;
+    }
+
+    .business-card-content {
+        padding: 20px;
+    }
+
+    .business-card-content h3 {
+        font-size: 22px;
+    }
+}
+/* title */
+.business-title{
+    color:#0f4fa8;
+    font-size:42px;
+    font-weight:bold;
+}
+
+.business-subtitle{
+    color:#777;
+    font-size:14px;
+}
+
+/* More About */
+.more-about-us {
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+
+.more-about-us h2 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #222;
+}
+
+.more-about-us h2:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2.7px;
+    background: #1e5aa8;
+    margin: 15px auto 0;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .business-cards {
+        margin-top: 25px;
+    }
+
+    .business-image {
+        height: 230px;
+    }
+
+    .business-card-content {
+        padding: 20px;
+    }
+
+    .business-card-content h3 {
+        font-size: 21px;
+    }
+}
 
 @media all and (max-width: 999px){
     .whatsapp {
@@ -822,6 +1016,8 @@ header{
     .home-tile{
         height:225px;
     }
+
+
 
     #newsletter{
         border-bottom:1px solid #c4c3c3;
@@ -999,3 +1195,6 @@ header{
     .product-list-title {font-size: 12px;line-height: 13px;}
     .product-list-subtitle {font-size: 10px;}
 }
+
+
+
