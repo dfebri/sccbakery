@@ -12,7 +12,7 @@
 
 <head>
     @include('templates.parts.head')
-    <link rel="stylesheet" href="{{URL::asset('resources/assets/css/default.css')}}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{URL::asset('resources/assets/css/default.css')}}?v=2" type="text/css" media="screen" />
     <link rel="stylesheet" href="{{URL::asset('resources/assets/css/nivo-slider.css')}}" type="text/css" media="screen" />
     <script type="text/javascript" src="{{URL::asset('resources/assets/js/jquery.nivo.slider.js')}}"></script>
 
@@ -69,10 +69,9 @@
     </script>
 </head>
 <body>
-
+    
 @include('templates.parts.header')
 <div id="content-box">
-
 	<div class="slideshow">
 		<div id="slider" class="nivoSlider">
 			@foreach($slideshow_list as $slide)
@@ -81,71 +80,154 @@
 		</div>
 	</div>
 
-	<div class="container">
-        <div class="row clearfix banner-home">
-            <div class="col-md-4 home-tile-box">
-                <a href="{{ $tile_1_link }}">
-                    <div class="home-tile" style="background-image:url('{{ URL::asset('resources/assets/uploads/content/'.$tile_1_picture) }}')">
-                        <div class="home-tile-overlay"></div>
-                        <div class="home-tile-text center">
-                            <div class="home-tile-title">{!! $tile_1_title !!}</div>
-                            <div class="home-tile-button">{{ $tile_1_button }}</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 home-tile-box">
-                <a href="{{ $tile_2_link }}">
-                    <div class="home-tile" style="background-image:url('{{URL::asset('resources/assets/uploads/content/'.$tile_2_picture)}}')">
-                        <div class="home-tile-overlay"></div>
-                        <div class="home-tile-text center">
-                            <div class="home-tile-title">{!! $tile_2_title !!}</div>
-                            <div class="home-tile-button">{{ $tile_2_button }}</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 home-tile-box">
-				<a href="{{ $tile_3_link }}">
-                    <div class="home-tile" style="background-image:url('{{URL::asset('resources/assets/uploads/content/'.$tile_3_picture)}}')">
-                        <div class="home-tile-overlay"></div>
-                        <div class="home-tile-text center">
-                            <div class="home-tile-title">{!! $tile_3_title !!}</div>
-                            <div class="home-tile-button">{{ $tile_3_button }}</div>
-                        </div>
-                    </div>
-				</a>
-            </div>
-        </div>
-
-        <div class="row"><hr /></div>
-
-        <div class="widget-video row clearfix">
-            <h3 class="center">video</h3>
-            <div class="center">
-                <div class="line-blue"></div>
+    <!-- business section -->
+    <section class="business-section">
+        <div class="business-container">
+            <div class="business-heading text-center">
+                <h2>Our Business </h2>
+                <p class="business-subtitle">
+                    Explore our specialized business divisions
+                </p>
             </div>
 
-            <div class="widget-video-wrapper clearfix">
-                <div class="widget-video-content col-md-4 center">
-                    <a href="{{ $home_check_our_video != '' ? $home_check_our_video : '#' }}" target="_blank" class="btn widget-video-button">check our video</a>
-                    <div class="widget-video-title">{!! $home_video_title !!}</div>
-                    <div class="widget-video-title-line"></div>
-                    <div class="widget-video-description">
-                        {!! $home_video_description !!}
+            <!-- cards business -->
+            <div class="row business-cards">
+                <!-- sac -->
+                <div class="col-md-6">
+                    <div class="business-card">
+                        <a href="https://sacfoodprocessing.com"
+                        target="_blank"
+                        class="business-image-link">
+                            <div class="business-image">
+                                <img src="{{ URL::asset('resources/assets/images/sac-home.jpg') }}"
+                                    alt="SAC Food Processing">
+                            </div>
+                        </a>
+                        <!-- card content -->
+                        <div class="business-card-content">
+                            <div class="business-category">
+                                FOOD PROCESSING MACHINE
+                            </div>
+                            <h3>SAC Food Processing</h3>
+                            <p>
+                                Complete industrial bakery equipment
+                                and production line solutions.
+                            </p>
+                            <a href="https://sacfoodprocessing.com"
+                            target="_blank"
+                            class="business-button">
+                                Explore Website <span>→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!--<div class="col-md-8" id="home-video">-->
-                <!--    <iframe width="100%" height="395" src="https://www.youtube.com/embed/{{ $home_video }}" frameborder="0" allowfullscreen></iframe>-->
-                <!--</div>-->
-                <div class="col-md-8" id="home-video">
-                    <iframe width="100%" height="395" src="https://www.youtube.com/embed/r-ozBSRoXyQ" frameborder="0" allowfullscreen  style="border-radius: 10px; overflow: hidden;"></iframe>
+
+                <!-- bakeware section -->
+                <div class="col-md-6">
+                    <div class="business-card">
+                        <a href="https://bakewareco.id"
+                        target="_blank"
+                        class="business-image-link">
+                          <div class="business-image">
+                                <img src="{{ URL::asset('resources/assets/images/bakeware-home.png') }}"
+                                    alt="Bakeware & Co">
+                            </div>
+                        </a>
+                       
+                        <div class="business-card-content">
+                            <div class="business-category">
+                                BAKEWARE & UTENSILS
+                            </div>
+                            <h3>Bakeware & Co.</h3>
+                            <p>
+                                Premium bakeware, bakery utensils
+                                and professional accessories.
+                            </p>
+                            <a href="https://bakewareco.id"
+                            target="_blank"
+                            class="business-button">
+                                Explore Website <span>→</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-	</div>
+    </section>
 
+    <div class="more-about-us text-center">
+        <h2>SCC Highlights</h2>
+    </div>
 
+    <div class="home-tiles-section">
+        <div class="home-tiles-section">
+
+            <div class="container">
+
+                <div class="row clearfix banner-home">
+
+                    <div class="col-md-4 home-tile-box">
+                        <a href="{{ $tile_1_link }}">
+                            <div class="home-tile" style="background-image:url('{{ URL::asset('resources/assets/uploads/content/'.$tile_1_picture) }}')">
+                                <div class="home-tile-overlay"></div>
+                                <div class="home-tile-text center">
+                                    <div class="home-tile-title">{!! $tile_1_title !!}</div>
+                                    <div class="home-tile-button">{{ $tile_1_button }}</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 home-tile-box">
+                        <a href="{{ $tile_2_link }}">
+                            <div class="home-tile" style="background-image:url('{{URL::asset('resources/assets/uploads/content/'.$tile_2_picture)}}')">
+                                <div class="home-tile-overlay"></div>
+                                <div class="home-tile-text center">
+                                    <div class="home-tile-title">{!! $tile_2_title !!}</div>
+                                    <div class="home-tile-button">{{ $tile_2_button }}</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 home-tile-box">
+                        <a href="{{ $tile_3_link }}">
+                            <div class="home-tile" style="background-image:url('{{URL::asset('resources/assets/uploads/content/'.$tile_3_picture)}}')">
+                                <div class="home-tile-overlay"></div>
+                                <div class="home-tile-text center">
+                                    <div class="home-tile-title">{!! $tile_3_title !!}</div>
+                                    <div class="home-tile-button">{{ $tile_3_button }}</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+
+                
+                <div class="row"><hr /></div>
+                <div class="widget-video row clearfix">
+                    <h3 class="center">video</h3>
+                    <div class="center">
+                        <div class="line-blue"></div>
+                    </div>
+
+                    <div class="widget-video-wrapper clearfix">
+                        <div class="widget-video-content col-md-4 center">
+                            <a href="{{ $home_check_our_video != '' ? $home_check_our_video : '#' }}" target="_blank" class="btn widget-video-button">check our video</a>
+                            <div class="widget-video-title">{!! $home_video_title !!}</div>
+                            <div class="widget-video-title-line"></div>
+                            <div class="widget-video-description">
+                                {!! $home_video_description !!}
+                            </div>
+                        </div>
+                        <!--<div class="col-md-8" id="home-video">-->
+                        <!--    <iframe width="100%" height="395" src="https://www.youtube.com/embed/{{ $home_video }}" frameborder="0" allowfullscreen></iframe>-->
+                        <!--</div>-->
+                        <div class="col-md-8" id="home-video">
+                            <iframe width="100%" height="395" src="https://www.youtube.com/embed/r-ozBSRoXyQ" frameborder="0" allowfullscreen  style="border-radius: 10px; overflow: hidden;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 @include('templates.parts.newsletter')
 @include('templates.parts.footer')
