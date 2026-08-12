@@ -481,6 +481,8 @@ $router->group([
     Route::any('search/{permalink}', array('as' => 'search_params', 'uses' => 'Search@search'));
     Route::post('process/subscribe', array('as' => 'dosubscribe', 'uses' => 'Process@do_subscribe'));
     Route::get('not-found', array('as' => 'error-page', 'uses' => 'Page@error'));
+    // route upcoming-event
+    Route::get('upcoming-events/{slug}', array ('as'=> 'upcoming-event-detail', 'uses' => 'page@event'));
 
     Route::any('{permalink}', array('as' => 'single-page', 'uses' => 'Page@create'));
 });
