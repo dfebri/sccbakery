@@ -81,6 +81,50 @@ class Page extends Controller {
         $this->data['meta_keywords'] 		= $this->data['upcoming_meta_keyword'];
     }
 
+    // public function event($id) 
+    // {
+    //     $event = UpcomingEventsModel::where('publish', 1)
+    //     ->where('id', $id)
+    //     ->first();
+
+    //     if(empty($event)) 
+    //     {
+    //         return Redirect::route('error-page');
+    //     }
+
+    //     $this->data['event'] = $event;
+    //     $this->data['title'] = $event->title;
+    //     $this->data['page'] = 'upcoming-events';
+
+    //     return view('upcomingeventdetail', $this->data);
+
+    // }
+    public function event($slug) 
+    {
+        $events = UpcomingEventsModel::where('publish', 1)->get();
+
+        $event = null;
+
+        foreach ($events as $item) {
+            if (\Illuminate\Support\Str::slug($item->title) == $slug) {
+                $event = $item;
+                break;
+            }
+        }
+
+        if(empty($event)) 
+        {
+            return Redirect::route('error-page');
+        }
+
+        $this->data['event'] = $event;
+        $this->data['title'] = $event->title;
+        $this->data['page'] = 'upcoming-events';
+
+        return view('upcomingeventdetail', $this->data);
+    }
+
+
     private function _why() {
         $this->data['content']  = WhyModel::first();
         $this->data['title']	 			= $this->data['why_meta_title'];
