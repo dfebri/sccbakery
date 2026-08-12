@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{URL::asset('resources/assets/css/bootstrap.min.css')}}" type="text/css" media="screen" />
 
-<link rel="stylesheet" href="{{URL::asset('resources/assets/css/styles.css')}}?v=2" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{URL::asset('resources/assets/css/styles.css')}}?v=3" type="text/css" media="screen" />
 
 
 
