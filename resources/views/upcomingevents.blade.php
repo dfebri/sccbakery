@@ -38,11 +38,37 @@
 
                     @endif
                 </div>
-                <div class="event_content">
+                <!-- <div class="event_content">
                     <div class="event_title">{{ $event->title }}</div>
+                    <a href="{{ url('/upcoming-events/'.$event->id) }}">
+                        {{ $event->title }}
+                    </a>
                     <div class="event_description">
                     {!! $event->description !!}
                     </div>
+                </div> -->
+                <div class="event_content">
+
+                    <div class="event_title">
+                        {{ $event->title }}
+                    </div>
+                    <!-- <div class="event_description">
+                        {!! $event->description !!}
+                    </div> -->
+                     @if(preg_match('/<img[^>]+src=["\']([^"\']+)["\']/i', $event->description, $matches))
+                        <div class="event_image">
+                            <img src="{{ $matches[1] }}" alt="{{ $event->title }}">
+                        </div>
+                    @endif
+                     <div class="event_description">
+                        {{ \Illuminate\Support\Str::limit(strip_tags($event->description), 180) }}
+                    </div>
+                    <div class="event_view">
+                        <a href="{{ url('/upcoming-events/'.\Illuminate\Support\Str::slug($event->title)) }}">
+                            VIEW EVENT →
+                        </a>
+                    </div>
+
                 </div>
             </div>
             @endforeach

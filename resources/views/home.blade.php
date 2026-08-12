@@ -12,7 +12,7 @@
 
 <head>
     @include('templates.parts.head')
-    <link rel="stylesheet" href="{{URL::asset('resources/assets/css/default.css')}}?v=2" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{URL::asset('resources/assets/css/default.css')}}?v=3" type="text/css" media="screen" />
     <link rel="stylesheet" href="{{URL::asset('resources/assets/css/nivo-slider.css')}}" type="text/css" media="screen" />
     <script type="text/javascript" src="{{URL::asset('resources/assets/js/jquery.nivo.slider.js')}}"></script>
 
