@@ -93,7 +93,37 @@
             <!-- cards business -->
             <div class="row business-cards">
                 <!-- sac -->
-                <div class="col-md-6">
+                <div class="col-md-4">
+                    <div class="business-card">
+                        <a href="http://localhost:8000/brand"
+                        target="_blank"
+                        class="business-image-link">
+                            <div class="business-image">
+                                <img src="{{ URL::asset('resources/assets/images/Card-SCC.png') }}"
+                                    alt="SAC Food Processing">
+                            </div>
+                        </a>
+                        <!-- card content -->
+                        <div class="business-card-content">
+                            <div class="business-category">
+                                BAKERY PROCESSING MACHINE
+                            </div>
+                            <h3>SCC Bakery Machine</h3>
+                            <p>
+                                Complete industrial bakery machine
+                                and production line solutions.
+                            </p>
+                            <a href="http://localhost:8000/brand"
+                            target="_blank"
+                            class="business-button">
+                                Explore Our Product <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- our product -->
+                <div class="col-md-4">
                     <div class="business-card">
                         <a href="https://sacfoodprocessing.com"
                         target="_blank"
@@ -106,7 +136,7 @@
                         <!-- card content -->
                         <div class="business-card-content">
                             <div class="business-category">
-                                FOOD PROCESSING MACHINE
+                                FOOD PROCESSING EQUIPMENT
                             </div>
                             <h3>SAC Food Processing</h3>
                             <p>
@@ -123,7 +153,7 @@
                 </div>
 
                 <!-- bakeware section -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="business-card">
                         <a href="https://bakewareco.id"
                         target="_blank"
@@ -151,6 +181,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
