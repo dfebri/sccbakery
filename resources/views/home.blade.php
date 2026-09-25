@@ -110,7 +110,7 @@
                             </div>
                             <h3>SCC Bakery Machine</h3>
                             <p>
-                                Professional Bakery Equipment for Reliable Production
+                                Professional bakery equipment for reliable production
                             </p>
                             <a href="https://www.sccbakery.com/brand"
                             target="_blank"
