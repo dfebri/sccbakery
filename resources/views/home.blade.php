@@ -115,7 +115,7 @@
                             <a href="https://www.sccbakery.com/brand"
                             target="_blank"
                             class="business-button">
-                                Explore Our Product <span>→</span>
+                                Explore Product <span>→</span>
                             </a>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                             <a href="https://bakewareco.id"
                             target="_blank"
                             class="business-button">
-                                Explore Website <span>→</span>
+                                Explore Store <span>→</span>
                             </a>
                         </div>
                     </div>
