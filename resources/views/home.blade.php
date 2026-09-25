@@ -99,7 +99,7 @@
                         target="_blank"
                         class="business-image-link">
                             <div class="business-image">
-                                <img src="{{ URL::asset('resources/assets/images/Card-SCC.png') }}"
+                                <img src="{{ URL::asset('resources/assets/images/scc-card.png') }}"
                                     alt="SAC Food Processing">
                             </div>
                         </a>
@@ -110,8 +110,7 @@
                             </div>
                             <h3>SCC Bakery Machine</h3>
                             <p>
-                                Complete industrial bakery machine
-                                and production line solutions.
+                                Professional Bakery Equipment for Reliable Production
                             </p>
                             <a href="https://www.sccbakery.com/brand"
                             target="_blank"
@@ -168,7 +167,7 @@
                             <div class="business-category">
                                 BAKEWARE & UTENSILS
                             </div>
-                            <h3>Bakeware & Co.</h3>
+                            <h3>Bakeware & Co</h3>
                             <p>
                                 Premium bakeware, bakery utensils
                                 and professional accessories.
