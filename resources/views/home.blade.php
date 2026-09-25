@@ -92,10 +92,10 @@
 
             <!-- cards business -->
             <div class="row business-cards">
-                <!-- sac -->
+                <!-- scc our product -->
                 <div class="col-md-4">
                     <div class="business-card">
-                        <a href="http://localhost:8000/brand"
+                        <a href="https://www.sccbakery.com/brand"
                         target="_blank"
                         class="business-image-link">
                             <div class="business-image">
@@ -113,7 +113,7 @@
                                 Complete industrial bakery machine
                                 and production line solutions.
                             </p>
-                            <a href="http://localhost:8000/brand"
+                            <a href="https://www.sccbakery.com/brand"
                             target="_blank"
                             class="business-button">
                                 Explore Our Product <span>→</span>
