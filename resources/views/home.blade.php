@@ -99,7 +99,7 @@
                         target="_blank"
                         class="business-image-link">
                             <div class="business-image">
-                                <img src="{{ URL::asset('resources/assets/images/scc-home1.jpeg') }}"
+                                <img src="{{ URL::asset('resources/assets/images/scc-home.jpeg') }}"
                                     alt="SAC Food Processing">
                             </div>
                         </a>
