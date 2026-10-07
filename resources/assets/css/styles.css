@@ -759,6 +759,7 @@ header{
 
 .business-image {
     width: 100%;
+    object-fit: cover;
     height: 280px;
     background: #f7f7f7;
     overflow: hidden;

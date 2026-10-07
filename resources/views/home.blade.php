@@ -99,7 +99,7 @@
                         target="_blank"
                         class="business-image-link">
                             <div class="business-image">
-                                <img src="{{ URL::asset('resources/assets/images/scc-card.png') }}"
+                                <img src="{{ URL::asset('resources/assets/images/scc-home1.jpeg') }}"
                                     alt="SAC Food Processing">
                             </div>
                         </a>
@@ -115,7 +115,7 @@
                             <a href="https://www.sccbakery.com/brand"
                             target="_blank"
                             class="business-button">
-                                Explore Product <span>→</span>
+                                Explore Website <span>→</span>
                             </a>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                         target="_blank"
                         class="business-image-link">
                             <div class="business-image">
-                                <img src="{{ URL::asset('resources/assets/images/sac-home.jpg') }}"
+                                <img src="{{ URL::asset('resources/assets/images/sac-home.jpeg') }}"
                                     alt="SAC Food Processing">
                             </div>
                         </a>
@@ -158,7 +158,7 @@
                         target="_blank"
                         class="business-image-link">
                           <div class="business-image">
-                                <img src="{{ URL::asset('resources/assets/images/bakeware-home.png') }}"
+                                <img src="{{ URL::asset('resources/assets/images/bakeware-home.jpeg') }}"
                                     alt="Bakeware & Co">
                             </div>
                         </a>
@@ -175,7 +175,7 @@
                             <a href="https://bakewareco.id"
                             target="_blank"
                             class="business-button">
-                                Explore Store <span>→</span>
+                                Explore Website <span>→</span>
                             </a>
                         </div>
                     </div>
